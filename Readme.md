@@ -11,7 +11,7 @@ It could be extended to greater things, but I probably won't.
 
 
 ##To use
-It is available for use on: 
+It is available for use on: https://random-adventures.netlify.com/
 
 You can also fork, clone or download the package. To run:
 
