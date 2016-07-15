@@ -4,13 +4,21 @@
 	</div>
 </div>
 <div class="row pad-row">
-	<div class="col-xs-10" ng-if="list1 > -1 && list2 > -1 && list3 > -1">
-		<span class="alert alert-info">Today, you are: <strong>{{writing_options[0].category}}</strong> the {{writing_options[0].options[list1]}}, <strong>{{writing_options[1].category}}</strong> {{writing_options[1].options[list2]}}, using {{writing_options[2].options[list3]}}.</span>
-		<button class="btn btn-danger" ng-click="clearOptions()">Clear</button>
+	<div class="col-xs-12" ng-if="list1 > -1 && list2 > -1 && list3 > -1">
+		<div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">Results!</h3>
+              </div>
+            <div class="panel-body">
+                Today, you are: <strong>{{writing_options[0].category}}</strong> the {{writing_options[0].options[list1]}}, <strong>{{writing_options[1].category}}</strong> {{writing_options[1].options[list2]}}, using {{writing_options[2].options[list3]}}.
+                <br /><br />
+                <button class="btn btn-danger pull-right" ng-click="clearOptions()">Clear</button>
+            </div>
+        </div>
 	</div>
 </div>
 <div class="row">
-  <div class="col-md-4">
+  <div class="col-sm-4">
 	  <h3>{{writing_options[0].category}}</h3>
 	  
 	  <ul class="list-group">
@@ -19,7 +27,7 @@
 		  </li>
 	  </ul>
   </div>
-  <div class="col-md-4">
+  <div class="col-sm-4">
 	  <h3>{{writing_options[1].category}}</h3>
 	  
 	  <ul class="list-group">
@@ -28,7 +36,7 @@
 		  </li>
 	  </ul>
   </div>
-  <div class="col-md-4">
+  <div class="col-sm-4">
 	  <h3>{{writing_options[2].category}}</h3>
 	  
 	  <ul class="list-group">
